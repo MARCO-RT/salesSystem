@@ -16,6 +16,7 @@ class PageController extends Controller
     {
         $this->repoCategory = new CategoryRepository();
         $this->repoProduct = new ProductRepository();
+
     }
 
 
@@ -27,16 +28,34 @@ class PageController extends Controller
     public function index()
     {
         $categories = $this->repoCategory->all();
-        return view('layouts/default', compact('categories'));
+        $resultFinal2= $this->repoProduct->getOneProductImg();
+        return view('layouts/default', compact('categories','resultFinal2'));
     }
 
-    public function categories($slug)
+    public function post()
     {
-        $category_id = $slug;
         $categories = $this->repoCategory->all();
-        $products = $this->repoProduct->getProductsByCategoryId($slug);
-        return view('categories', compact('slug', 'categories', 'products'));
+        return view('post', compact('categories'));
     }
+
+       public function categories($slug)
+    {
+        $total_categories = $this->repoCategory->getCountProductByCategory();
+        $products = $this->repoProduct->getProductsByCategoryId($slug);
+        return view('categories', compact('slug', 'products', 'total_categories'));
+    }
+
+//    public function getOneProduct($slug)
+//    {
+//
+//        $resultFinal= $this->repoProduct->getOneProductBySlug($slug);
+////        return view('products', compact('name', 'pictures', 'price'));
+//        dd($resultFinal->toArray());
+//
+//    }
+
+
+
 
     /**
      * php artisan migrate:refresh --seed

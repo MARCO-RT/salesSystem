@@ -18,6 +18,7 @@
  */
 
 namespace App\Core\Product;
+use DB;
 
 
 use App\Core\Contracts\BaseRepositoryInterface;
@@ -25,9 +26,9 @@ use App\Core\Contracts\BaseRepositoryInterface;
 class ProductRepository implements BaseRepositoryInterface
 {
     public function all()
-    {
-        // TODO: Implement all() method.
-    }
+{
+    return Product::all();
+}
 
     public function create(array $attributes)
     {
@@ -53,7 +54,38 @@ class ProductRepository implements BaseRepositoryInterface
 
         $result= Product::wherehas('category', function($query) use ($slug){
             $query->where('slug',$slug);
-        })->paginate(20);
+        })->paginate(10);
         return $result;
+    }
+
+
+
+    public function getOneProductBySlug($slug)
+    {
+        $resultProduct= DB::table('products')
+            ->join('categories', 'products.category_id', '=', 'categories.id')
+            ->join('pictures', 'products.id', '=', 'pictures.product_id')
+
+            ->select(DB::raw(" products.name, products.price,categories.name as type,categories.slug,products.code as code, products.created_at as creado,
+                                products.description as description,
+                            CASE WHEN products.condition =1 then 'EXCELENTE'
+                            WHEN products.condition =2 then 'MALO' ELSE 'MALASO' END AS conditiones,
+                             pictures.url as url_i, products.views as views"))
+            ->where('products.slug',$slug)
+            ->get();
+        return $resultProduct;
+    }
+
+    public function getOneProductImg()
+    {
+        $result2= DB::table('products')
+            ->join('categories', 'products.category_id', '=', 'categories.id')
+            ->join('pictures', 'products.id', '=', 'pictures.product_id')
+
+            ->select(DB::raw(" products.name, products.price,categories.name as type,
+                                products.description as description,
+                                pictures.url as url_i, products.views as views"))
+            ->get();
+        return $result2;
     }
 }

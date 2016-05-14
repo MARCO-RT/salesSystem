@@ -21,6 +21,7 @@ namespace App\Core\Category;
 
 
 use App\Core\Contracts\BaseRepositoryInterface;
+use DB;
 
 /**
  * Class CategoryRepository
@@ -67,6 +68,15 @@ class CategoryRepository implements BaseRepositoryInterface
     public function deleted($id)
     {
         // TODO: Implement deleted() method.
+    }
+
+    public function getCountProductByCategory(){
+        $categories = Category::join("products", "categories.id", "=", "products.category_id")
+            ->distinct()
+            ->select(DB::raw("categories.id as xid"), "categories.name", "categories.slug",
+                DB::raw('(SELECT COUNT(*) FROM products where category_id=xid) as total'))
+            ->get();
+        return $categories;
     }
 
 }

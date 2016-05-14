@@ -2,11 +2,11 @@
 <html>
 <head>
     <title>Resale a Business Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
-    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-select.css">
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="{{url('/')}}/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{url('/')}}/css/bootstrap-select.css">
+    <link href="{{url('/')}}/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{url('/')}}/css/flexslider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{url('/')}}/css/font-awesome.min.css" />
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -21,11 +21,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     <!--//fonts-->
     <!-- js -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="{{url('/')}}/js/jquery.min.js"></script>
     <!-- js -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-select.js"></script>
+    <script src="{{url('/')}}/js/bootstrap.min.js"></script>
+    <script src="{{url('/')}}/js/bootstrap-select.js"></script>
     <script>
         $(document).ready(function () {
             var mySelect = $('#first-disabled2');
@@ -46,17 +46,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             });
         });
     </script>
-    <script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
-    <link href="css/jquery.uls.css" rel="stylesheet"/>
-    <link href="css/jquery.uls.grid.css" rel="stylesheet"/>
-    <link href="css/jquery.uls.lcd.css" rel="stylesheet"/>
+    <script type="text/javascript" src="{{url('/')}}/js/jquery.leanModal.min.js"></script>
+    <link href="{{url('/')}}/css/jquery.uls.css" rel="stylesheet"/>
+    <link href="{{url('/')}}/css/jquery.uls.grid.css" rel="stylesheet"/>
+    <link href="{{url('/')}}/css/jquery.uls.lcd.css" rel="stylesheet"/>
     <!-- Source -->
-    <script src="js/jquery.uls.data.js"></script>
-    <script src="js/jquery.uls.data.utils.js"></script>
-    <script src="js/jquery.uls.lcd.js"></script>
-    <script src="js/jquery.uls.languagefilter.js"></script>
-    <script src="js/jquery.uls.regionfilter.js"></script>
-    <script src="js/jquery.uls.core.js"></script>
+    <script src="{{url('/')}}/js/jquery.uls.data.js"></script>
+    <script src="{{url('/')}}/js/jquery.uls.data.utils.js"></script>
+    <script src="{{url('/')}}/js/jquery.uls.lcd.js"></script>
+    <script src="{{url('/')}}/js/jquery.uls.languagefilter.js"></script>
+    <script src="{{url('/')}}/js/jquery.uls.regionfilter.js"></script>
+    <script src="{{url('/')}}/js/jquery.uls.core.js"></script>
     <script>
         $( document ).ready( function() {
             $( '.uls-trigger' ).uls( {
@@ -483,7 +483,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="container">
         <h1>Sell or Advertise   <span class="segment-heading">    anything online </span> with Resale</h1>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-        <a href="post-ad.html">Post Free Ad</a>
+        <a href="/post">Post Free Ad</a>
     </div>
 </div>
 <!-- content-starts-here -->
@@ -508,136 +508,139 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="trending-ads">
         <div class="container">
             <!-- slider -->
-            <div class="trend-ads">
-                <h2>Trending Ads</h2>
-                <ul id="flexiselDemo3">
-                    <li>
-                        <div class="col-md-3 biseller-column">
-                            <a href="single.html">
-                                <img src="images/p1.jpg"/>
-                                <span class="price">&#36; 450</span>
-                            </a>
-                            <div class="ad-info">
-                                <h5>There are many variations of passages</h5>
-                                <span>1 hour ago</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 biseller-column">
-                            <a href="single.html">
-                                <img src="images/p2.jpg"/>
-                                <span class="price">&#36; 399</span>
-                            </a>
-                            <div class="ad-info">
-                                <h5>Lorem Ipsum is simply dummy</h5>
-                                <span>3 hour ago</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 biseller-column">
-                            <a href="single.html">
-                                <img src="images/p3.jpg"/>
-                                <span class="price">&#36; 199</span>
-                            </a>
-                            <div class="ad-info">
-                                <h5>It is a long established fact that a reader</h5>
-                                <span>8 hour ago</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 biseller-column">
-                            <a href="single.html">
-                                <img src="images/p4.jpg"/>
-                                <span class="price">&#36; 159</span>
-                            </a>
-                            <div class="ad-info">
-                                <h5>passage of Lorem Ipsum you need to be</h5>
-                                <span>19 hour ago</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="col-md-3 biseller-column">
-                            <a href="single.html">
-                                <img src="images/p5.jpg"/>
-                                <span class="price">&#36; 1599</span>
-                            </a>
-                            <div class="ad-info">
-                                <h5>There are many variations of passages</h5>
-                                <span>1 hour ago</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 biseller-column">
-                            <a href="single.html">
-                                <img src="images/p6.jpg"/>
-                                <span class="price">&#36; 1099</span>
-                            </a>
-                            <div class="ad-info">
-                                <h5>passage of Lorem Ipsum you need to be</h5>
-                                <span>1 day ago</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 biseller-column">
-                            <a href="single.html">
-                                <img src="images/p7.jpg"/>
-                                <span class="price">&#36; 109</span>
-                            </a>
-                            <div class="ad-info">
-                                <h5>It is a long established fact that a reader</h5>
-                                <span>9 hour ago</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 biseller-column">
-                            <a href="single.html">
-                                <img src="images/p8.jpg"/>
-                                <span class="price">&#36; 189</span>
-                            </a>
-                            <div class="ad-info">
-                                <h5>Lorem Ipsum is simply dummy</h5>
-                                <span>3 hour ago</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="col-md-3 biseller-column">
-                            <a href="single.html">
-                                <img src="images/p9.jpg"/>
-                                <span class="price">&#36; 2599</span>
-                            </a>
-                            <div class="ad-info">
-                                <h5>Lorem Ipsum is simply dummy</h5>
-                                <span>3 hour ago</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 biseller-column">
-                            <a href="single.html">
-                                <img src="images/p10.jpg"/>
-                                <span class="price">&#36; 3999</span>
-                            </a>
-                            <div class="ad-info">
-                                <h5>It is a long established fact that a reader</h5>
-                                <span>9 hour ago</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 biseller-column">
-                            <a href="single.html">
-                                <img src="images/p11.jpg"/>
-                                <span class="price">&#36; 2699</span>
-                            </a>
-                            <div class="ad-info">
-                                <h5>passage of Lorem Ipsum you need to be</h5>
-                                <span>1 day ago</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 biseller-column">
-                            <a href="single.html">
-                                <img src="images/p12.jpg"/>
-                                <span class="price">&#36; 899</span>
-                            </a>
-                            <div class="ad-info">
-                                <h5>There are many variations of passages</h5>
-                                <span>1 hour ago</span>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+            <div class="trending-ads">
+                <div class="container">
+                    <!-- slider -->
+                    <div class="trend-ads">
+                        <h2>Trending Ads</h2>
+                        <ul id="flexiselDemo3">
+                            <li>
+                                <div class="col-md-3 biseller-column">
+                                    <a href="single.html">
+                                        <img src="images/p1.jpg"/>
+                                        <span class="price">&#36; 450</span>
+                                    </a>
+                                    <div class="ad-info">
+                                        <h5>There are many variations of passages</h5>
+                                        <span>1 hour ago</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 biseller-column">
+                                    <a href="single.html">
+                                        <img src="images/p2.jpg"/>
+                                        <span class="price">&#36; 399</span>
+                                    </a>
+                                    <div class="ad-info">
+                                        <h5>Lorem Ipsum is simply dummy</h5>
+                                        <span>3 hour ago</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 biseller-column">
+                                    <a href="single.html">
+                                        <img src="images/p3.jpg"/>
+                                        <span class="price">&#36; 199</span>
+                                    </a>
+                                    <div class="ad-info">
+                                        <h5>It is a long established fact that a reader</h5>
+                                        <span>8 hour ago</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 biseller-column">
+                                    <a href="single.html">
+                                        <img src="images/p4.jpg"/>
+                                        <span class="price">&#36; 159</span>
+                                    </a>
+                                    <div class="ad-info">
+                                        <h5>passage of Lorem Ipsum you need to be</h5>
+                                        <span>19 hour ago</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-md-3 biseller-column">
+                                    <a href="single.html">
+                                        <img src="images/p5.jpg"/>
+                                        <span class="price">&#36; 1599</span>
+                                    </a>
+                                    <div class="ad-info">
+                                        <h5>There are many variations of passages</h5>
+                                        <span>1 hour ago</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 biseller-column">
+                                    <a href="single.html">
+                                        <img src="images/p6.jpg"/>
+                                        <span class="price">&#36; 1099</span>
+                                    </a>
+                                    <div class="ad-info">
+                                        <h5>passage of Lorem Ipsum you need to be</h5>
+                                        <span>1 day ago</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 biseller-column">
+                                    <a href="single.html">
+                                        <img src="images/p7.jpg"/>
+                                        <span class="price">&#36; 109</span>
+                                    </a>
+                                    <div class="ad-info">
+                                        <h5>It is a long established fact that a reader</h5>
+                                        <span>9 hour ago</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 biseller-column">
+                                    <a href="single.html">
+                                        <img src="images/p8.jpg"/>
+                                        <span class="price">&#36; 189</span>
+                                    </a>
+                                    <div class="ad-info">
+                                        <h5>Lorem Ipsum is simply dummy</h5>
+                                        <span>3 hour ago</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-md-3 biseller-column">
+                                    <a href="single.html">
+                                        <img src="images/p9.jpg"/>
+                                        <span class="price">&#36; 2599</span>
+                                    </a>
+                                    <div class="ad-info">
+                                        <h5>Lorem Ipsum is simply dummy</h5>
+                                        <span>3 hour ago</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 biseller-column">
+                                    <a href="single.html">
+                                        <img src="images/p10.jpg"/>
+                                        <span class="price">&#36; 3999</span>
+                                    </a>
+                                    <div class="ad-info">
+                                        <h5>It is a long established fact that a reader</h5>
+                                        <span>9 hour ago</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 biseller-column">
+                                    <a href="single.html">
+                                        <img src="images/p11.jpg"/>
+                                        <span class="price">&#36; 2699</span>
+                                    </a>
+                                    <div class="ad-info">
+                                        <h5>passage of Lorem Ipsum you need to be</h5>
+                                        <span>1 day ago</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 biseller-column">
+                                    <a href="single.html">
+                                        <img src="images/p12.jpg"/>
+                                        <span class="price">&#36; 899</span>
+                                    </a>
+                                    <div class="ad-info">
+                                        <h5>There are many variations of passages</h5>
+                                        <span>1 hour ago</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                 <script type="text/javascript">
                     $(window).load(function() {
                         $("#flexiselDemo3").flexisel({
@@ -665,7 +668,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                     });
                 </script>
-                <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+                <script type="text/javascript" src="{{url('/')}}/js/jquery.flexisel.js"></script>
             </div>
         </div>
         <!-- //slider -->
@@ -770,4 +773,5 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </footer>
 <!--footer section end-->
 </body>
+
 </html>
